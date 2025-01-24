@@ -1,9 +1,16 @@
 name: test
 
-on: workflow_dispatch
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 env:
   FOUNDRY_PROFILE: ci
+  BASE_RPC_URL: ${{ secrets.BASE_RPC_URL }}
 
 jobs:
   check:
@@ -25,6 +32,7 @@ jobs:
       - name: Run Forge build
         run: |
           forge --version
+          forge soldeer install
           forge build --sizes
         id: build
 
@@ -32,3 +40,5 @@ jobs:
         run: |
           forge test -vvv
         id: test
+        env:
+          BASE_RPC_URL: ${{ secrets.BASE_RPC_URL }}

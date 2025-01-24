@@ -15,3 +15,6 @@ docs/
 
 *.sh
 keystore.json
+
+# Soldeer
+/dependencies

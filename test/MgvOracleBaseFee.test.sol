@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-import {Test, console2 as console, Vm} from "forge-std/Test.sol";
+import {Test, console2 as console, Vm} from "forge-std/src/Test.sol";
 import {MgvOracleBaseFee, SafeCast, Math} from "../src/MgvOracleBaseFee.sol";
 
 contract MgvOracleBaseFeeTest is Test {

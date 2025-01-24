@@ -2,9 +2,9 @@
 pragma solidity ^0.8.20;
 
 import { IMgvMonitor, MgvLib, OLKey, Density } from "@mgv/src/core/MgvLib.sol";
-import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
-import { Math } from "@openzeppelin/contracts/utils/math/Math.sol";
-import { SafeCast } from "@openzeppelin/contracts/utils/math/SafeCast.sol";
+import { Ownable } from "@openzeppelin-contracts/access/Ownable.sol";
+import { Math } from "@openzeppelin-contracts/utils/math/Math.sol";
+import { SafeCast } from "@openzeppelin-contracts/utils/math/SafeCast.sol";
 
 
 contract MgvOracleBaseFee is IMgvMonitor, Ownable {

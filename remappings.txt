@@ -1,6 +1,7 @@
-@mgv/src/=lib/mangrove-core/src/
-@mgv/lib/=lib/mangrove-core/lib/
-@mgv/test/=lib/mangrove-core/test/
-@mgv/script/=lib/mangrove-core/script/
-@mgv/forge-std/=lib/forge-std/src/
-@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/
+@mgv/src/=dependencies/mangrove-core-2.1.0/src/
+@mgv/lib/=dependencies/mangrove-core-2.1.0/lib/
+@mgv/test/=dependencies/mangrove-core-2.1.0/test/
+@mgv/script/=dependencies/mangrove-core-2.1.0/script/
+@mgv/forge-std/=dependencies/forge-std-1.9.5/src/
+@openzeppelin-contracts/=dependencies/@openzeppelin-contracts-5.2.0/
+forge-std/=dependencies/forge-std-1.9.5/
