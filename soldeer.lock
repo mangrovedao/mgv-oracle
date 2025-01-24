@@ -15,5 +15,5 @@ integrity = "4753ffdfa0dde40878372b6a4d8e8fd1648b190b33996896c8b92f6f1680850f"
 [[dependencies]]
 name = "mangrove-core"
 version = "2.1.0"
-git = "git@github.com:mangrovedao/mangrove-core.git"
+git = "https://github.com/mangrovedao/mangrove-core.git"
 rev = "6fa9a5716753e577f127d1b1511304add0b386eb"
