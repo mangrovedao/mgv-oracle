@@ -1,6 +1,12 @@
 name: test
 
-on: workflow_dispatch
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 env:
   FOUNDRY_PROFILE: ci
@@ -25,6 +31,7 @@ jobs:
       - name: Run Forge build
         run: |
           forge --version
+          forge soldeer install
           forge build --sizes
         id: build
 
