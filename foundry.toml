@@ -22,7 +22,7 @@ remappings_location = "txt"
 
 [dependencies]
 forge-std = "1.9.5"
-mangrove-core = { version = "2.1.0", git = "git@github.com:mangrovedao/mangrove-core.git", rev = "6fa9a5716753e577f127d1b1511304add0b386eb" }
+mangrove-core = { version = "2.1.0", git = "https://github.com/mangrovedao/mangrove-core.git", rev = "6fa9a5716753e577f127d1b1511304add0b386eb" }
 "@openzeppelin-contracts" = "5.2.0"
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
