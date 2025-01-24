@@ -10,6 +10,7 @@ on:
 
 env:
   FOUNDRY_PROFILE: ci
+  BASE_RPC_URL: ${{ secrets.BASE_RPC_URL }}
 
 jobs:
   check:
@@ -39,3 +40,5 @@ jobs:
         run: |
           forge test -vvv
         id: test
+        env:
+          BASE_RPC_URL: ${{ secrets.BASE_RPC_URL }}
